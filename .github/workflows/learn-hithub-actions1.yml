@@ -13,10 +13,10 @@ jobs:
       run: |
           git config --local user.email "siva.omh@gmail.com"
           git config --local user.name "siva"
-    - name: Merge master back to dev
+    - name: Merge master back to develop
       run: |
           git fetch --unshallow
-          git checkout dev
+          git checkout develop
           git pull
-          git merge --no-ff master -m "Auto-merge master back to dev"
+          git merge --no-ff master -m "Auto-merge master back to develop"
           git push
