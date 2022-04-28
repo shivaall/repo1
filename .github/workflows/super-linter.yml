@@ -1,7 +1,7 @@
 on: 
   pull_request:
     branches: [master]
-    types: [closed]
+    types: [open]
 jobs:
   merge-master-back-to-dev:
     if: github.event.pull_request.merged == true
